@@ -1,6 +1,6 @@
 {
   "name": "syslogsfiles-winston",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate logs files with syslogs format (local).",
   "main": "index.js",
   "scripts": {

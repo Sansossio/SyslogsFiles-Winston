@@ -17,7 +17,7 @@ $ cd yourProject
 $ npm install syslogsfiles-winston --save
 ```
 
-### Example
+### How to use?
 
 ```js
 const winston = require('winston');
@@ -48,4 +48,11 @@ myError.message = 'Error message';
 myError.name = 'ERROR_NAME';
 
 logger.error(myError.message);
+```
+
+### Logs example file
+
+```
+error: <163>1 2018-02-12T10:08:41.00+01:00 localhost sudo 123 - - Error message
+error: <163>1 2018-02-12T10:08:41.00+01:00 google.com sudo 123 - - Error google
 ```
