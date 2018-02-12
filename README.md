@@ -27,7 +27,7 @@ const logger = new winston.Logger({
   transports: [
     new Syslogs({
       files: {
-        filename: '',
+        filename: 'yourfilename.log',
         path: './logs',
         maxSize: '5mb',
       },
@@ -44,8 +44,8 @@ const logger = new winston.Logger({
 });
 
 const myError = new Error();
-myError.message = 'Test error123';
-myError.name = 'TEST';
+myError.message = 'Error message';
+myError.name = 'ERROR_NAME';
 
 logger.error(myError.message);
 ```
